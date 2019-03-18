@@ -13,9 +13,9 @@ class AdminSiteTests(TestCase):
         )
         self.client.force_login(self.admin_user)
         self.user = get_user_model().objects.create_user(
-            email = 'test@fake.com',
-            password = 'test1234',
-            name ='Test user full name'
+            email='test@fake.com',
+            password='test1234',
+            name='Test user full name'
         )
 
     # https://docs.djangoproject.com/en/2.1/ref/contrib/admin/
